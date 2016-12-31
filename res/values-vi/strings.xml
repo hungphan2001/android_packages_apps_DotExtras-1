@@ -3,6 +3,7 @@
 <!--  Copyright (C) 2014-2016 The Dirty Unicorns Project
       Copyright (C) 2016 AospExtended ROM Project
 	  Copyright (C) 2017 Project DotOS
+	  Copyright (C) 2019 Project Dot-Extended
   This program is free software: you can redistribute it and/or modify
   it under the terms of the GNU General Public License as published by
   the Free Software Foundation, either version 3 of the License, or
@@ -518,4 +519,12 @@
     <string name="listview_overshoot_interpolator">Vượt qua</string>
     <string name="listview_anticipate_overshoot_interpolator">Dự đoán và vượt qua</string>
     <string name="listview_bounce_interpolator">Tung lên</string>
+	
+	<!-- Option to enable/disable scrolling cache -->
+    <string name="pref_scrollingcache_title">Cuộn bộ đệm</string>
+    <string name="pref_scrollingcache_summary">Cuộn bộ đệm có thể cải thiện hiệu suất cuộn với chi phí bộ nhớ</string>
+    <string name="pref_scrollingcache_force_enable">Buộc kích hoạt</string>
+    <string name="pref_scrollingcache_default_enable">Kích hoạt mặc định</string>
+    <string name="pref_scrollingcache_default_disable">Tắt mặt định</string>
+    <string name="pref_scrollingcache_force_disable">Buộc tắt</string>
 </resources>
