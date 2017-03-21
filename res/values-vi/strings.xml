@@ -429,4 +429,21 @@
     <string name="content_padding">Góc đệm nội dung</string>
     <string name="corner_fwvals">Sử dụng các giá trị khung</string>
     <string name="corner_fwvals_summary">Hữu ích nếu thiết bị thực sự có các góc tròn</string>
+<!-- Screen state service -->
+    <string name="screen_state_toggles_summary">@vô giá trị</string>
+    <string name="screen_state_toggles_title">Đình chỉ hành động</string>
+    <string name="screen_state_toggles_enable_title">Bật</string>
+    <string name="screen_state_toggles_enable_summary">Các hành động sẽ được thực hiện trên màn hình tắt. Trên màn hình ở trạng thái trước sẽ được khôi phục.</string>
+    <string name="screen_state_toggles_mobile_title">Mạng di động</string>
+    <string name="screen_state_toggles_location_title">Vị trí</string>
+    <string name="screen_state_toggles_twog">Chuyển sang 2G</string>
+    <string name="screen_state_toggles_twog_summary">Chế độ mạng sẽ được chuyển sang 2G khi tắt màn hình</string>
+    <string name="screen_state_toggles_gps">Tắt GPS</string>
+    <string name="screen_state_toggles_gps_summary">Dịch vụ định vị dựa trên GPS sẽ bị tắt trên màn hình tắt</string>
+    <string name="screen_state_toggles_mobile_data">Tắt mạng di động</string>
+    <string name="screen_state_toggles_mobile_data_summary">Dữ liệu di động sẽ bị tắt trên màn hình tắt</string>
+    <string name="screen_state_off_delay_title">Tắt màn hình hành động</string>
+    <string name="screen_state_off_delay_summary">Số giây chờ đợi trước khi thực hiện hành động sau khi tắt màn hình</string>
+    <string name="screen_state_on_delay_title">Màn hình trễ hành động</string>
+    <string name="screen_state_on_delay_summary">Số giây chờ đợi trước khi thực hiện hành động sau khi bật màn hình</string>
 </resources>
