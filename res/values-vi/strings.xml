@@ -475,6 +475,23 @@
     <string name="toast">Toast</string>
 
     <!-- Animations -->
-    <string name="animations_title">Hiệu ứng</string>
+    <string name="animations_title">Hoạt hình</string>
+	
+	<!-- AOKP custom system animations -->
+    <string name="system_animation_title">Hoạt hình hệ thống</string>
+    <string name="activity_open_title">Hoạt động hiệu ứng mở</string>
+    <string name="activity_close_title">Hoạt động đóng hoạt hình</string>
+    <string name="task_open_title">Nhiệm vụ mở hoạt hình</string>
+    <string name="task_close_title">Nhiệm vụ đóng hoạt hình</string>
+    <string name="task_move_to_front_title">Di chuyển đến hoạt hình phía trước</string>
+    <string name="task_move_to_back_title">Di chuyển trở lại hoạt hình</string>
+    <string name="wallpaper_open_title">Hình nền mở hoạt hình</string>
+    <string name="wallpaper_close_title">Hình nền đóng hoạt hình</string>
+    <string name="wallpaper_intra_open_title">Hình nền trong hoạt hình mở</string>
+    <string name="wallpaper_intra_close_title">Hình nền trong hoạt hình đóng</string>
+    <string name="animation_duration_title">Thời lượng hoạt ảnh</string>
+    <string name="title_animation_no_override">Ngăn chặn ghi đè ứng dụng</string>
+    <string name="summary_animation_no_override">Ngăn ứng dụng ghi đè chuyển đổi</string>
+    <string name="animation_duration_default">Mặc định</string>
 
 </resources>
