@@ -482,6 +482,7 @@
     <string name="activity_open_title">Hoạt động hiệu ứng mở</string>
     <string name="activity_close_title">Hoạt động đóng hoạt hình</string>
     <string name="task_open_title">Nhiệm vụ mở hoạt hình</string>
+	<string name="task_open_behind_title">TNhiệm vụ sau mở hoạt hình</string>
     <string name="task_close_title">Nhiệm vụ đóng hoạt hình</string>
     <string name="task_move_to_front_title">Di chuyển đến hoạt hình phía trước</string>
     <string name="task_move_to_back_title">Di chuyển trở lại hoạt hình</string>
