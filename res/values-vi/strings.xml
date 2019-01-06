@@ -527,4 +527,10 @@
     <string name="pref_scrollingcache_default_enable">Kích hoạt mặc định</string>
     <string name="pref_scrollingcache_default_disable">Tắt mặt định</string>
     <string name="pref_scrollingcache_force_disable">Buộc tắt</string>
+	
+	<!-- Screen off animation -->
+    <string name="screen_off_animation_title">Hiệu ứng tắt màn</string>
+    <string name="screen_off_animation_default">Mặc định</string>
+    <string name="screen_off_animation_crt">CRT</string>
+    <string name="screen_off_animation_scale">Tỉ lệ</string>
 </resources>
