@@ -275,8 +275,10 @@
         <item>@string/lockscreen_clock_selection_dot</item>
         <item>@string/lockscreen_clock_selection_spectrum</item>
         <item>@string/lockscreen_clock_selection_sneeky</item>
-        <item>@string/lockscreen_clock_selection_text</item>
-    </string-array>
+        <item>@string/lockscreen_clock_selection_gradient_full</item>
+        <item>@string/lockscreen_clock_selection_gradient_likeqs</item>
+        <item>@string/lockscreen_clock_selection_text</item>   
+ </string-array>
 
     <string-array name="lockscreen_clock_selection_values" translatable="false">
         <item>0</item>
@@ -295,5 +297,7 @@
         <item>13</item>
         <item>14</item>
         <item>15</item>
-    </string-array>
+        <item>16</item>
+        <item>17</item> 
+</string-array>
 </resources>
