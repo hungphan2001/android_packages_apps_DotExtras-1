@@ -16,6 +16,4 @@
             android:icon="@drawable/ic_lockscreen_shortcuts"
             android:title="@string/lockscreen_shortcuts" />
 
-
-
 </PreferenceScreen>
