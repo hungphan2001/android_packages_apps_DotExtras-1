@@ -69,6 +69,10 @@
              android:summary="@string/dot_logo_summary"
              android:defaultValue="false"/>		  
 			 
+          <Preference
+             android:key="aggressive_battery"
+             android:title="@string/aggressive_battery_title"
+             android:fragment="com.dot.dotextras.fragments.AggressiveBattery" />
      </PreferenceCategory>
 
 
