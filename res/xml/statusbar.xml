@@ -35,6 +35,12 @@
         android:title="@string/traffic_title" />
 
     <Preference
+            android:key="carrier_label"
+            android:fragment="com.dot.dotextras.fragments.CarrierLabel"
+            android:icon="@drawable/ic_carrierlabel"
+            android:title="@string/carrierlabel_title" />
+
+    <Preference
         android:icon="@drawable/ic_systemui_tuner_statusbaritems"
         android:key="systemui_tuner_statusbar"
         android:title="@string/statusbar_items_category">
