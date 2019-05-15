@@ -19,7 +19,7 @@
     <PreferenceCategory
         android:key="general_tweaks_general_category"
         android:title="@string/general_category">
-
+    
     <com.dot.dotextras.preference.SystemSettingSwitchPreference
         android:key="three_finger_gesture" 
         android:title="@string/three_finger_gesture" 
@@ -31,6 +31,36 @@
         android:title="@string/toast_icon_title"
         android:summary="@string/toast_icon_summary"
         android:defaultValue="false" />
+
+      <PreferenceCategory
+        android:key="corners_category"
+        android:title="@string/corners_category" >
+
+        <com.dot.dotextras.preference.SecureSettingSwitchPreference
+            android:key="sysui_rounded_fwvals"
+            android:title="@string/corner_fwvals"
+            android:summary="@string/corner_fwvals_summary"
+            android:defaultValue="true"
+            android:disableDependentsState="true" />
+
+        <com.dot.dotextras.preference.CustomSeekBarPreference
+            android:key="sysui_rounded_size"
+            android:title="@string/corner_radius"
+            android:max="60"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" />
+
+        <com.dot.dotextras.preference.CustomSeekBarPreference
+            android:key="sysui_rounded_content_padding"
+            android:title="@string/content_padding"
+            android:max="10"
+            settings:min="0"
+            settings:units=""
+            android:persistent="false"
+            android:dependency="sysui_rounded_fwvals" />
+    </PreferenceCategory>
 
     </PreferenceCategory>
 
