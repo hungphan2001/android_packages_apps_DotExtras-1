@@ -393,11 +393,27 @@ public class AccentPicker extends InstrumentedDialogFragment implements OnClickL
                 @Override
                 public void onClick(View v) {
                     Settings.System.putIntForUser(resolver,
-                            Settings.System.ACCENT_PICKER, 21, UserHandle.USER_CURRENT);
+                            Settings.System.ACCENT_PICKER, 22, UserHandle.USER_CURRENT);
                     dismiss();
                 }
             });
         }
+		
+	Button qGreenAccent = null;
+        if (mView != null) {
+            qGreenAccent = mView.findViewById(R.id.qGreenAccent);
+        }
+        if (qGreenAccent != null) {
+            qGreenAccent.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Settings.System.putIntForUser(resolver,
+                            Settings.System.ACCENT_PICKER, 23, UserHandle.USER_CURRENT);
+                    dismiss();
+                }
+            });
+        }
+		
         GridLayout gridlayout;
         if (mView != null) {
 
