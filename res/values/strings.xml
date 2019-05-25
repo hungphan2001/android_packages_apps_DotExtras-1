@@ -533,4 +533,10 @@
     <string name="screen_state_off_delay_summary">Number of seconds to wait before performing actions after screen off</string>
     <string name="screen_state_on_delay_title">Screen On actions delay</string>
     <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
+ 
+    <string name="notifications_category_title">Annoying notifications protection</string>
+	<!-- Heads up options -->
+    <string name="less_boring_heads_up_title">Make heads up less annoying</string>
+    <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
+
 </resources>

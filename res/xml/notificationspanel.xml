@@ -28,5 +28,14 @@
             android:fragment="com.dot.dotextras.Notifications"
             android:icon="@drawable/ic_notifications"
             android:title="@string/notifications_title" />
+    <PreferenceCategory
+        android:key="notifications_category"
+        android:title="@string/notifications_category_title">
 
+        <com.dot.dotextras.preference.SystemSettingSwitchPreference
+            android:key="less_boring_heads_up"
+            android:title="@string/less_boring_heads_up_title"
+            android:summary="@string/less_boring_heads_up_summary"
+            android:defaultValue="true" />
+	</PreferenceCategory>
 </PreferenceScreen>
