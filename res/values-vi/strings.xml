@@ -448,4 +448,8 @@
     <string name="screen_state_off_delay_summary">Số giây chờ đợi trước khi thực hiện hành động sau khi tắt màn hình</string>
     <string name="screen_state_on_delay_title">Màn hình trễ hành động</string>
     <string name="screen_state_on_delay_summary">Số giây chờ đợi trước khi thực hiện hành động sau khi bật màn hình</string>
+<!-- Edit tile -->
+    <string name="qs_edit_title">Sửa biểu tượng</string>
+    <string name="qs_edit_summary">Kích hoạt biểu tượng chỉnh sửa ô ở chân trang</string>
+
 </resources>
