@@ -55,7 +55,7 @@ import android.widget.RelativeLayout;
 import com.dot.dotextras.fragments.System;
 import com.dot.dotextras.fragments.Lockscreen;
 import com.dot.dotextras.fragments.PowerMenu;
-import com.dot.dotextras.fragments.QuickSettings;
+import com.dot.dotextras.fragments.Interface;
 import com.dot.dotextras.fragments.Recents;
 import com.dot.dotextras.fragments.Statusbar;
 import com.dot.dotextras.fragments.Navigation;
@@ -209,7 +209,7 @@ private void pushStats() {
 		Fragment frags[] = new Fragment[] {
             new Statusbar(),
             new Navigation(),
-            new QuickSettings(),
+            new Interface(),
             new Recents(),
             new Lockscreen(),
 			new System()

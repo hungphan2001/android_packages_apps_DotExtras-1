@@ -30,7 +30,7 @@
 	
     <!-- Fragments -->
     <string name="statusbar">Statusbar</string>
-    <string name="quick_settings">Quick Settings</string>
+    <string name="quick_settings">Interfaces</string>
     <string name="recents">Recents</string>
     <string name="power_menu">Power Menu</string>
     <string name="lockscreen">Lockscreen</string>
@@ -77,8 +77,8 @@
 	<!-- Navbar tuner -->
     <string name="navbar_tuner_title">Navbar tuner</string>
 	
-	<!-- Quick Settings -->
-    <string name="quick_settings_title">Quick Settings</string>
+	<!-- Interface -->
+    <string name="interface_settings_title">Interface</string>
 	
 	<!-- Recents UI -->
     <string name="recents_ui_title">Recents UI</string>
@@ -353,9 +353,11 @@
 	<!-- Qs Style Picker -->
 	<string name="qs_styles_dialog_title">Select a QS tile style</string>
 	
-	<!-- QuickSettings Panel Transparency -->
+	<!-- Interface -->
     <string name="qs_panel_alpha_title">Opacity</string>
     <string name="qs_opacity_category">QS panel opacity</string>
+	<string name="system_colors">Colors</string>
+	<string name="accent_color">Accent color</string>
 	
 	<!-- QS footer warnings -->
     <string name="qs_footer_warnings_title">QS footer warnings</string>

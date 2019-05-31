@@ -28,7 +28,7 @@
     <string name="icons_category">Biểu Tượng</string>
     <!-- Fragments -->
     <string name="statusbar">Thanh Trạng Thái</string>
-    <string name="quick_settings">Cài Đặt Nhanh</string>
+    <string name="quick_settings">Giao Diện</string>
     <string name="recents">Đa Nhiệm</string>
     <string name="power_menu">Menu Nguồn</string>
     <string name="lockscreen">Màn Hình Khóa</string>

@@ -21,6 +21,8 @@ import android.content.ContentResolver;
 import android.content.res.Resources;
 import android.os.Bundle;
 import android.os.UserHandle;
+import android.os.SystemProperties;
+import android.graphics.Color;
 import android.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.ListPreference;
@@ -32,23 +34,33 @@ import android.provider.Settings;
 
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.android.settings.wrapper.OverlayManagerWrapper;
+import com.android.settings.wrapper.OverlayManagerWrapper.OverlayInfo;
 import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.Utils;
+import com.android.internal.util.dotos.DOTUtils;
 
-public class QuickSettings extends SettingsPreferenceFragment implements
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+public class Interface extends SettingsPreferenceFragment implements
         OnPreferenceChangeListener {
 
-        private static final String TAG = "QuickSettings";
+        private static final String TAG = "Interface";
 
         private static final String OMNI_QS_PANEL_BG_ALPHA = "qs_panel_bg_alpha";
 
+        private static final String ACCENT_COLOR = "accent_color";
+
+        private static final String ACCENT_COLOR_PROP = "persist.sys.theme.accentcolor";
+
         private CustomSeekBarPreference mQsPanelAlpha;
+        private ColorPickerPreference mThemeColor;
+        private OverlayManagerWrapper mOverlayService;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        addPreferencesFromResource(R.xml.quick_settings);
+        addPreferencesFromResource(R.xml.interface_settings);
 
         final ContentResolver resolver = getActivity().getContentResolver();
         final PreferenceScreen prefSet = getPreferenceScreen();
@@ -58,6 +70,14 @@ public class QuickSettings extends SettingsPreferenceFragment implements
                 Settings.System.OMNI_QS_PANEL_BG_ALPHA, 255, UserHandle.USER_CURRENT);
         mQsPanelAlpha.setValue(qsPanelAlpha);
         mQsPanelAlpha.setOnPreferenceChangeListener(this);
+
+        mThemeColor = (ColorPickerPreference) findPreference(ACCENT_COLOR);
+        String colorVal = SystemProperties.get(ACCENT_COLOR_PROP, "-1");
+        int color = "-1".equals(colorVal)
+                ? Color.WHITE
+                : Color.parseColor("#" + colorVal);
+        mThemeColor.setNewPreviewColor(color);
+        mThemeColor.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -65,11 +85,12 @@ public class QuickSettings extends SettingsPreferenceFragment implements
         return MetricsProto.MetricsEvent.DOTEXTRAS;
     }
 
+	
     @Override
     public void onResume() {
         super.onResume();
     }
-
+	
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
         if (preference == mQsPanelAlpha) {
@@ -77,9 +98,18 @@ public class QuickSettings extends SettingsPreferenceFragment implements
             Settings.System.putIntForUser(getContentResolver(),
                     Settings.System.OMNI_QS_PANEL_BG_ALPHA, bgAlpha,
                     UserHandle.USER_CURRENT);
-            return true;
+		 return true;
+		
+        } else if (preference == mThemeColor) {
+            int color = (Integer) newValue;
+            String hexColor = String.format("%08X", (0xFFFFFFFF & color));
+            SystemProperties.set(ACCENT_COLOR_PROP, hexColor);
+            mOverlayService.reloadAndroidAssets(UserHandle.USER_CURRENT);
+            mOverlayService.reloadAssets("com.android.settings", UserHandle.USER_CURRENT);
+            mOverlayService.reloadAssets("com.android.systemui", UserHandle.USER_CURRENT);
+            DOTUtils.showSystemUiRestartDialog(getContext());
+        return true;
         }
         return false;
     }
-
 }

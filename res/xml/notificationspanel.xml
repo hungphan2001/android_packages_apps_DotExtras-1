@@ -18,10 +18,10 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
          <Preference
-            android:key="quick_settings"
-            android:fragment="com.dot.dotextras.QuickSettings"
+            android:key="interface_settings"
+            android:fragment="com.dot.dotextras.Interface"
             android:icon="@drawable/ic_quick_settings"
-            android:title="@string/quick_settings_title" />
+            android:title="@string/interface_settings_title" />
 
          <Preference
             android:key="notifications"
