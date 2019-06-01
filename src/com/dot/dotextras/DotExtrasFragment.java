@@ -59,6 +59,7 @@ import com.dot.dotextras.fragments.Interface;
 import com.dot.dotextras.fragments.Recents;
 import com.dot.dotextras.fragments.Statusbar;
 import com.dot.dotextras.fragments.Navigation;
+import com.dot.dotextras.fragments.Animations;
 import com.dot.dotextras.views.HeadCards;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
@@ -212,6 +213,7 @@ private void pushStats() {
             new Interface(),
             new Recents(),
             new Lockscreen(),
+			new Animations(),
 			new System()
         };
         HeadCards statusbar = view.findViewById(R.id.statusbar_card);
@@ -249,11 +251,18 @@ private void pushStats() {
                 showFragment(view, frags[4]);
             }
         });
-        HeadCards system = view.findViewById(R.id.system_card);
+		HeadCards animations = view.findViewById(R.id.animations_card);
         system.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 showFragment(view, frags[5]);
+            }
+        });
+        HeadCards system = view.findViewById(R.id.system_card);
+        system.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showFragment(view, frags[6]);
             }
         });
     }

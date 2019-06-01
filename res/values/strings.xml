@@ -35,8 +35,10 @@
     <string name="power_menu">Power Menu</string>
     <string name="lockscreen">Lockscreen</string>
     <string name="navigationbar">Navigation Bar</string>
+    <string name="animations">Animations</string>
     <string name="system">System</string>
-
+    
+    
 
     <string name="general_category">General</string>
     <string name="light_category">Led Customization</string>
@@ -537,6 +539,7 @@
     <string name="screen_state_on_delay_summary">Number of seconds to wait before performing actions after screen on</string>
  
     <string name="notifications_category_title">Annoying notifications protection</string>
+	
 	<!-- Heads up options -->
     <string name="less_boring_heads_up_title">Make heads up less annoying</string>
     <string name="less_boring_heads_up_summary">Show heads up only for dialer or messaging app if they are not in foreground</string>
@@ -544,4 +547,27 @@
     <string name="qs_edit_title">Edit Icon</string>
     <string name="qs_edit_summary">Enable the tile edit icon in the footer</string>
 
+    <!-- Toast Animation -->
+    <string name="toast_animation_title">Toast animation</string>
+    <string name="toast_none_animation">None</string>
+    <string name="toast_default_animation">Default</string>
+    <string name="toast_fade_animation">Fade</string>
+    <string name="toast_SlideRight_animation">Slide right</string>
+    <string name="toast_SlideLeft_animation">Slide left</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Fast fade</string>
+    <string name="toast_GrowFade_animation">Grow fade</string>
+    <string name="toast_GrowFadeCenter_animation">Grow fade center</string>
+    <string name="toast_GrowFadeBottom_animation">Grow fade bottom</string>
+    <string name="toast_Translucent_animation">Translucent</string>
+    <string name="toast_SlideLeftRight_animation">Slide left to right</string>
+    <string name="toast_SlideRightLeft_animation">Slide right to left</string>
+    <string name="toast_animation_test">This is test for selected toast animation</string>
+    <string name="toast">Toast</string>
+
+    <!-- Animations -->
+    <string name="animations_title">Animations</string>
 </resources>

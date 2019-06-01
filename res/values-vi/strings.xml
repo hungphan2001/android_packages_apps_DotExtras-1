@@ -33,6 +33,7 @@
     <string name="power_menu">Menu Nguồn</string>
     <string name="lockscreen">Màn Hình Khóa</string>
     <string name="navigationbar">Thanh Điều Hướng</string>
+	<string name="animations">Sống Động</string>
     <string name="system">Hệ Thống</string>
     <string name="general_category">Chung</string>
     <string name="light_category">Cài Đặt Đèn Led</string>
@@ -451,5 +452,29 @@
 <!-- Edit tile -->
     <string name="qs_edit_title">Sửa biểu tượng</string>
     <string name="qs_edit_summary">Kích hoạt biểu tượng chỉnh sửa ô ở chân trang</string>
+	
+	<!-- Toast Animation -->
+    <string name="toast_animation_title">Hiệu ứng Toast</string>
+    <string name="toast_none_animation">Không</string>
+    <string name="toast_default_animation">Mặc định</string>
+    <string name="toast_fade_animation">Phai màu</string>
+    <string name="toast_SlideRight_animation">Trượt sang phải</string>
+    <string name="toast_SlideLeft_animation">Trượt sang trái</string>
+    <string name="toast_Xylon_animation">Xylon</string>
+    <string name="toast_Toko_animation">Toko</string>
+    <string name="toast_Tn_animation">Tn</string>
+    <string name="toast_Honami_animation">Honami</string>
+    <string name="toast_FastFade_animation">Phai mờ dần</string>
+    <string name="toast_GrowFade_animation">Phát triển mờ dần</string>
+    <string name="toast_GrowFadeCenter_animation">Trung tâm phát triển mờ dần</string>
+    <string name="toast_GrowFadeBottom_animation">Tăng dần đáy</string>
+    <string name="toast_Translucent_animation">Trong suốt</string>
+    <string name="toast_SlideLeftRight_animation">Trượt trái sang phải</string>
+    <string name="toast_SlideRightLeft_animation">Trượt phải sang trái</string>
+    <string name="toast_animation_test">Đây là thử nghiệm cho hiệu ứng Toast được chọn</string>
+    <string name="toast">Toast</string>
+
+    <!-- Animations -->
+    <string name="animations_title">Hiệu ứng</string>
 
 </resources>

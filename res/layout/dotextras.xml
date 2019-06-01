@@ -125,6 +125,19 @@
 
             </com.dot.dotextras.views.HeadCards>
 
+             <com.dot.dotextras.views.HeadCards
+                android:id="@+id/animations_card"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="6dp"
+                android:clickable="true"
+                app:cardCornerRadius="10dp"
+                app:cardUseCompatPadding="true"
+                app:image="@drawable/animations"
+                app:title="@string/animations">
+
+            </com.dot.dotextras.views.HeadCards>
+			
             <com.dot.dotextras.views.HeadCards
                 android:id="@+id/system_card"
                 android:layout_width="match_parent"
